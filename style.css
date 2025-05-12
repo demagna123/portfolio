@@ -7,6 +7,17 @@
     box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-snap-type: y proximity;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+    scroll-duration: 2s;
+  }
+}
 body{
     width: 100%;
     height: 100vh;
@@ -298,3 +309,74 @@ section{
     
     
 }
+
+.about-me{
+
+    margin-top: 4px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.text-about h1{
+    margin:  2px;
+    color: white;
+     font-size: 2.5rem;
+     display: flex;
+     text-align: center;
+     justify-content: center;
+     align-items: center;
+}
+
+.grid-card{
+    margin-top: 10px;
+    margin-left: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.grid{
+    width: 700px;
+    height: auto;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: white;
+    transition: all 0.3s ease; 
+  position: relative; 
+}
+    
+
+.text-grid h3{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.grid {
+  
+  
+}
+
+.rond {
+  width: 30px;
+  height: 30px;
+  background-color: #077b32;
+  border-radius: 50%;
+  transition: all 0.3s ease; 
+}
+
+.grid:hover {
+  scale: 1.1;
+  color: #077b32;
+  border: 2px solid #077b32;
+  background-color: transparent;
+  font-weight: 700;
+  box-shadow: 0 0 40px #077b32;
+}
+
+.grid:hover .rond {
+  width: 50px;
+  height: 50px;
+  background-color: white; 
+}
+
