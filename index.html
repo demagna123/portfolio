@@ -5,21 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ablam portfolio</title>
     <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <nav>
         <div class="nav-container">
-            <div class="logo">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
                 Ablam <span>Demagna</span>
             </div>
     
         <div class="links">
-            <div class="link"><a href="#">Home</a></div>
-            <div class="link"><a href="#">About</a></div>
-            <div class="link"><a href="#">Skills</a></div>
-            <div class="link"><a href="#">Services</a></div>
-            <div class="link"><a href="#">Contact</a></div>
+            <div class="link" data-aos="fade-up" data-aos-duration="1500" data-out-delay="100"><a href="#">Home</a></div>
+            <div class="link"data-aos="fade-up" data-aos-duration="1600" data-out-delay="200"><a href="#">About</a></div>
+            <div class="link"data-aos="fade-up" data-aos-duration="1700" data-out-delay="300"><a href="#">Skills</a></div>
+            <div class="link"data-aos="fade-up" data-aos-duration="1800" data-out-delay="400"><a href="#">Services</a></div>
+            <div class="link"data-aos="fade-up" data-aos-duration="1900" data-out-delay="500"><a href="#">Contact</a></div>
         </div>
     
         <i id="hamburger" class="fa-solid fa-bars" ></i>
@@ -44,9 +45,9 @@
 
             </div>
             <div class="content">
-                <h1>Hey I'm  <span> Ablam</span></h1>
-                <div class="typewritter">I'm a <span class="typewritter-text"></span><label for="">|</label></div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis officia fugiat commodi fugit itaque temporibus. Praesentium facilis corrupti ipsam nobis placeat, consequuntur labore! Aliquid corrupti placeat nobis dolorum earum quisquam.</p>
+                <h1 data-aos="fade-left" data-aos-duration="1500" data-out-delay="700">Hey I'm  <span> Ablam</span></h1>
+                <div class="typewritter" data-aos="fade-right" data-aos-duration="1500" data-out-delay="900">I'm a <span class="typewritter-text"></span><label for="">|</label></div>
+                <p data-aos="flip-down" data-aos-duration="1500" data-out-delay="1100">Spécialisé en HTML, CSS, JavaScript, php , java  (et éventuellement Laravel), je transforme les idées en interfaces intuitives et fonctionnelles. Que ce soit pour créer un site vitrine, une application mobile ou un système plus complexe, je m’investis avec rigueur et créativité.</p>
 
                 <div class="socials-links">
                     <a href=""><i class="fa-brands fa-github"></i></a>
@@ -63,6 +64,10 @@
         </div>
     </section>
 
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({offset:0});
+  </script>
     <script src="script.js"></script>
 </body>
 </html>
